@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Chỉnh Sửa Khách Hàng Và Sản Phẩm</title>
+    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <!--Banner-->
+    <div class="banner">
+        <div class="img_banner"><img src="img/logo.png" alt=""></div>
+        <div class="text_banner">
+            <h2>QUẢN LÝ BẢO HÀNH</h2>
+        </div>
+    </div>
+    <!--Menu-->
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="#">TRANG CHỦ</a>
+            </li>
+            <li>
+                <a href="#">SẢN PHẨM </a>
+            </li>
+            <li>
+                <a href="#">KHÁCH HÀNG</a>
+            </li>
+            <li>
+                <a href="#">LINH KIỆN</a>
+            </li>
+            <li>
+                <a href="#">NHÂN VIÊN</a>
+            </li>
+            <li>
+                <a href="#">THỐNG KÊ</a>
+            </li>
+        </ul>
+    </div>
+
+    <!--Form Chỉnh Sửa Khác Hàng Và Sản Phẩm-->
+    <div class="container">
+        <h2 style="color: red; margin-left: 200px;">${mesErr}</h2>
+        <form action="/add-Product">
+            <h3>Chỉnh Sửa thông tin sản phẩm</h3>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="IMEI">IMEI :</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="IMEI" name="IMEI" value="" placeholder="IMEI.." readonly >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="TENSP">Tên Sản Phẩm :</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="TENSP" name="TENSP" value="" placeholder="Tên Sản Phẩm..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="NSX">Nhà Sản Xuất :</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="NSX" name="NSX" value="" placeholder="Nhà Sản Xuất..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="LOAISP">Loại SP :</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="LOAISP" name="LOAISP" value="" placeholder="Loại SP..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="THOIGIANBAOHANH">Thời gian bảo hành:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="THOIGIANBAOHANH" name="THOIGIANBAOHANH" value="" placeholder="Thời gian bảo hành..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="HINHANHSP">Chọn Ảnh SP :</label>
+                </div>
+                <div class="col-75">
+                    <input type="file" id="HINHANHSP" name="HINHANHSP" value="" placeholder="Chọn Ảnh SP..">
+                </div>
+            </div>
+            <div class="col-25">
+                <label for="THONGTINSP">Thông Tin SP</label>
+            </div>
+            <div class="col-75">
+                <textarea id="subject" id="THONGTINSP" name="THONGTINSP" value="" placeholder="Thông Tin SP.."
+                    style="height:200px"></textarea>
+            </div>
+
+            <div class="row">
+                <input type="submit" value="Update">
+            </div>
+
+
+        </form>
+    </div>
+    <!--Footder-->
+    <div class="footer">
+        <p>Copy right 2015 by Nhóm 9 Company</p>
+        <p>Văn phòng tại Hà Nội</p>
+        <p>Trụ sở: TC-206 Bách Khoa-Hà Nội</p>
+        <p>Chi nhánh: 196 Lê Thanh Nghị-Hai Bà Trưng-Hà Nội</p>
+    </div>
+</body>
+
+</html>

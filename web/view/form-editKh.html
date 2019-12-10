@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Chỉnh Sửa Khách Hàng Và Sản Phẩm</title>
+    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <!--Banner-->
+    <div class="banner">
+        <div class="img_banner"><img src="img/logo.png" alt=""></div>
+        <div class="text_banner">
+            <h2>QUẢN LÝ BẢO HÀNH</h2>
+        </div>
+    </div>
+    <!--Menu-->
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="#">TRANG CHỦ</a>
+            </li>
+            <li>
+                <a href="#">SẢN PHẨM </a>
+            </li>
+            <li>
+                <a href="#">KHÁCH HÀNG</a>
+            </li>
+            <li>
+                <a href="#">LINH KIỆN</a>
+            </li>
+            <li>
+                <a href="#">NHÂN VIÊN</a>
+            </li>
+            <li>
+                <a href="#">THỐNG KÊ</a>
+            </li>
+        </ul>
+    </div>
+
+    <!--Form Chỉnh Sửa Khác Hàng Và Sản Phẩm-->
+    <div class="container">
+        <h2 style="color: red; margin-left: 200px;">${mesErr}</h2>
+        <form action="/add-Product">
+            <h3>Chỉnh Sửa thông tin khách hàng</h3>
+            <div class="row">
+                <div class="col-25">
+                    <label for="TENKH">Tên khách hàng :</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="TENKH" name="TENKH" value="" placeholder="Tên khách hàng..">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="DIENTHOAI">Số điện thoại :</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="DIENTHOAI" name="DIENTHOAI" value="" placeholder="Số điện thoại..">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="EMAIL">Email :</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="EMAIL" name="EMAIL" value="" placeholder="Email..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="DIACHI">Địa chỉ :</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="DIACHI" name="DIACHI" value="" placeholder="Địa chỉ..">
+                </div>
+            </div>
+
+            <div class="row">
+                <input type="submit" value="Update">
+            </div>
+
+
+        </form>
+    </div>
+    <!--Footder-->
+    <div class="footer">
+        <p>Copy right 2015 by Nhóm 9 Company</p>
+        <p>Văn phòng tại Hà Nội</p>
+        <p>Trụ sở: TC-206 Bách Khoa-Hà Nội</p>
+        <p>Chi nhánh: 196 Lê Thanh Nghị-Hai Bà Trưng-Hà Nội</p>
+    </div>
+</body>
+
+</html>

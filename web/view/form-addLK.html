@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Thêm Linh Kiện</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <!--Banner-->
+    <div class=" banner">
+        <div class="img_banner"><img src="img/logo.png" alt=""></div>
+        <div class="text_banner">
+            <h2>QUẢN LÝ BẢO HÀNH</h2>
+        </div>
+    </div>
+    <!--Menu-->
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="index.html">TRANG CHỦ</a>
+            </li>
+            <li>
+                <a href="san-pham.html">SẢN PHẨM </a>
+            </li>
+            <li>
+                <a href="khach-hang.html">KHÁCH HÀNG</a>
+            </li>
+            <li>
+                <a href="linh-kien.html">LINH KIỆN</a>
+            </li>
+            <li>
+                <a href="nhan-vien.html">NHÂN VIÊN</a>
+            </li>
+            <li>
+                <a href="thong-ke.html">THỐNG KÊ</a>
+            </li>
+        </ul>
+    </div>
+    <!--Form Thêm Linh Kiện-->
+    <div class="container">
+        <h2 style="color: red; margin-left: 200px;">${mesErr}</h2>
+        <form action="/add-LK">
+            <h3>Nhập Thông Tin Linh Kiện</h3>
+            <div class="row">
+                <div class="col-25">
+                    <label for="TENLK">Tên linh kiện :</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="TENLK" name="TENLK" placeholder="Tên linh kiện..">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="NXS">Nhà sản xuất :</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="NXS" name="NXS" placeholder="Nhà sản xuất..">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="GIALK">Giá linh kiện :</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="GIALK" name="GIALK" placeholder="Giá linh kiện..">
+                </div>
+            </div>
+
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+
+
+    </div>
+
+    <!--Footder-->
+    <div class="footer">
+        <p>Copy right 2015 by Nhóm 9 Company</p>
+        <p>Văn phòng tại Hà Nội</p>
+        <p>Trụ sở: TC-206 Bách Khoa-Hà Nội</p>
+        <p>Chi nhánh: 196 Lê Thanh Nghị-Hai Bà Trưng-Hà Nội</p>
+    </div>
+</body>
+
+</html>

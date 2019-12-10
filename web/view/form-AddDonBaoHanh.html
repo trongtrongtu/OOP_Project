@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Customer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+<!--Banner-->
+<div class="banner">
+    <div class="img_banner"><img src="img/logo.png" alt=""></div>
+    <div class="text_banner">
+        <h2>QUẢN LÝ BẢO HÀNH</h2>
+    </div>
+</div>
+<!--Menu-->
+<div class="menu">
+    <ul>
+        <li>
+            <a href="#">TRANG CHỦ</a>
+        </li>
+        <li>
+            <a href="#">SẢN PHẨM </a>
+        </li>
+        <li>
+            <a href="#">KHÁCH HÀNG</a>
+        </li>
+        <li>
+            <a href="#">LINH KIỆN</a>
+        </li>
+        <li>
+            <a href="#">NHÂN VIÊN</a>
+        </li>
+        <li>
+            <a href="#">THỐNG KÊ</a>
+        </li>
+    </ul>
+</div>
+
+<!--Form thêm sản phẩm-->
+<div class="container">
+    <h2 style="color: red; margin-left: 200px;">${mesErr}</h2>
+    <form action="/donbh-edit">
+        <h3>Nhập thông tin đơn hàng.</h3>
+        <div class="row">
+            <div class="col-25">
+                <label for="maDH">Mã đơn :</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="maDH" name="maDH" placeholder="123" readonly >
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="imei">Imei thiết bị :</label>
+            </div>
+            <div class="col-75">
+                <div class="form-group">
+                    <select class="form-control" name="imei" id="imei">
+                      <option selected value="123" >123</option>
+                      <option value="123">123</option>
+                      <option value="456">456</option>
+                    </select>
+                  </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="maKH">khách hàng :</label>
+            </div>
+            <div class="col-75">
+               <div class="form-group">
+                 <select class="form-control" name="maKH" id="maKH">
+                   <option selected>Lương Aanh Tuấn-0969034989</option>
+                   <option value="123">Lương Aanh Tuấn-0969034989</option>
+                   <option selected>Lương Aanh Tuấn-0969034989</option>
+                 </select>
+               </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="maLK">Tên linh kiện thay thế :</label>
+            </div>
+            <div class="col-75">
+                <div class="form-group">
+                    <select class="form-control" name="maLK" id="maLK">
+                      <option selected>Chọn linh kiện sữa chữa</option>
+                      <option value="123">Ram DDR4 samsung 4G, bus 2400</option>
+                      <option value="123">Ram DDR4 samsung 4G, bus 2400</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="giaDon">Báo giá :</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="giaDon" name="giaDon" placeholder="Báo giá.">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="maNV"> nhân viên :</label>
+            </div>
+            <div class="col-75">
+                <div class="form-group">
+                    <select class="form-control" name="maNV" id="maNV">
+                      <option selected>Chọn nhân viên</option>
+                      <option value="123">Lương Anh Tuấn</option>
+                      <option value="123">Lương Anh Tuấn</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="trangThai">Trạng thái:</label>
+            </div>
+            <div class="col-75">
+                <div class="form-group">
+                  <select class="form-control" name="trangThai" id="trangThai">
+                    <option selected value=""></option>
+                    <option value="xong" >xong</option>
+                    <option value="dangSua">Đang sửa</option>
+                  </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-25">
+            <label for="moTaBenh">Mô tả bệnh</label>
+        </div>
+        <div class="col-75">
+                <textarea id="subject" id="moTaBenh" name="moTaBenh" placeholder="Mô tả bệnh.."
+                          style="height:200px"></textarea>
+        </div>
+
+        <div class="row">
+            <input type="submit" value="Submit">
+        </div>
+
+
+    </form>
+</div>
+<!--Footder-->
+<div class="footer">
+    <p>Copy right 2015 by Nhóm 9 Company</p>
+    <p>Văn phòng tại Hà Nội</p>
+    <p>Trụ sở: TC-206 Bách Khoa-Hà Nội</p>
+    <p>Chi nhánh: 196 Lê Thanh Nghị-Hai Bà Trưng-Hà Nội</p>
+</div>
+</body>
+
+</html>
